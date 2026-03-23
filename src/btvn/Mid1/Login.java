@@ -36,7 +36,8 @@ public class Login {
             try (Statement stmt = conn.createStatement()) {
                 stmt.execute(createTableSQL);
 
-                String insertSample = "INSERT IGNORE INTO doctors (doctor_code, password, full_name) " + "VALUES ('hello123', '123456789', 'Bác sĩ An Hải Dũng');";
+                String insertSample = "INSERT IGNORE INTO doctors (doctor_code, password, full_name) "
+                        + "VALUES ('hello123', '123456789', 'Bác sĩ An Hải Dũng');";
                 stmt.execute(insertSample);
             }
 

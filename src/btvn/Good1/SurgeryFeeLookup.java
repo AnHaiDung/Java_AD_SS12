@@ -34,7 +34,6 @@ public class SurgeryFeeLookup {
                 cstmt.setInt(1, surgeryIdInput);
                 cstmt.execute();
                 double totalCost = cstmt.getDouble(2);
-                System.out.println("--- KẾT QUẢ TRA CỨU PHẪU THUẬT ---");
                 System.out.println("Mã phẫu thuật: " + surgeryIdInput);
                 System.out.println("Tổng chi phí (total_cost): " + totalCost + " USD");
             }

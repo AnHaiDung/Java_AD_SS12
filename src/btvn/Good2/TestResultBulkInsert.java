@@ -47,8 +47,6 @@ public class TestResultBulkInsert {
 
             String sql = "INSERT INTO Results(data) VALUES(?)";
 
-            conn.setAutoCommit(false);
-
             long startTime = System.currentTimeMillis();
 
             try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
